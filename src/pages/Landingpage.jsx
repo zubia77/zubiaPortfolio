@@ -4,7 +4,6 @@ const Landingpage = () => {
   return (
     <div className="landingpage h-screen w-screen bg-color-10">
       <div className="h-screen grid grid-cols-10 grid-rows-7">
-
         {/* Bubbles */}
         <div className="bubble bub1 col-start-2 row-start-1 w-64 h-64 rounded-full "></div>
         <div className="bubble bub2 rounded-full m-1 w-24 h-24 col-start-1 row-start-2"></div>
@@ -25,17 +24,33 @@ const Landingpage = () => {
         <div className="bubble bub17 rounded-full w-24 h-24 col-start-10 row-start-2"></div>
 
         {/* Meta Content */}
-        <div className="mainContent bg-color-20/90 z-10 col-start-1 col-end-8 row-start-1 row-end-7 m-10 rounded-xl flex justify-center">
-        <img className="w-80 h-80 " src="./public/Z.png" alt="" />
+        <div className="mainContent bg-color-20/90 z-10 col-start-1 col-end-8 row-start-1 row-end-7 m-10 rounded-xl">
+          <div className="flex flex-col">
+            {" "}
+            <div className="flex justify-center">
+              <img className="w-80 h-80" src="./public/Z.png" alt="" />
+            </div>
+            <div className="flex justify-center text-color-10">Zubi</div>
+            <div className="flex justify-center text-color-10">
+              Frontend Developer
+            </div>
+          </div>
         </div>
-        
+
         {/* Navbar */}
-        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-1 rounded-xl m-10 z-10">1</div>
-        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-2 rounded-xl m-10  z-10">2</div>
-        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-3 rounded-xl m-10  z-10">3</div>
-        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-4 rounded-xl m-10 z-10">4</div>
+        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-1 rounded-xl m-10 z-10">
+          1
+        </div>
+        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-2 rounded-xl m-10  z-10">
+          2
+        </div>
+        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-3 rounded-xl m-10  z-10">
+          3
+        </div>
+        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-4 rounded-xl m-10 z-10">
+          4
+        </div>
       </div>
-      
     </div>
   );
 };
