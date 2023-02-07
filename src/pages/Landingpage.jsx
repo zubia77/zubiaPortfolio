@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 
 const Landingpage = () => {
   return (
@@ -25,14 +26,33 @@ const Landingpage = () => {
 
         {/* Meta Content */}
         <div className="mainContent bg-color-20/90 z-10 col-start-1 col-end-8 row-start-1 row-end-7 m-10 rounded-xl">
-          <div className="flex flex-col">
+          <div className="h-full flex flex-col">
             {" "}
             <div className="flex justify-center">
               <img className="w-80 h-80" src="./public/Z.png" alt="" />
             </div>
-            <div className="flex justify-center text-color-10">Zubi</div>
-            <div className="flex justify-center text-color-10">
-              Frontend Developer
+            <div className="h-3/6 flex flex-col justify-between items-center text-color-10">
+              <div className="greeting text-4xl font-100">Hi! I'm</div>
+              <div className="name font-10 text-9xl">
+                Zubi
+              </div>
+              <div className="profession text-3xl font-100">
+                Frontend Developer
+              </div>
+            </div>
+            <div className="socialMediaIcons h-3/5 m-2  flex justify-center items-end gap-4 text-color-20">
+              <div className="w-8 h-8 rounded-full bg-color-10 flex justify-center items-center">
+                <Icon className="text-2xl" icon="uil:linkedin-alt" />
+              </div>
+              <div className="w-8 h-8 rounded-full bg-color-10 flex justify-center items-center">
+                <Icon
+                  className="text-2xl"
+                  icon="icon-park-outline:github-one"
+                />
+              </div>
+              <div className="w-8 h-8 rounded-full bg-color-10 flex justify-center items-center">
+                <Icon className="text-3xl" icon="ri:xing-fill" />
+              </div>
             </div>
           </div>
         </div>
