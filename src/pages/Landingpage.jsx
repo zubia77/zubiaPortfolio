@@ -33,25 +33,43 @@ const Landingpage = () => {
             </div>
             <div className="h-3/6 flex flex-col justify-between items-center text-color-10">
               <div className="greeting text-4xl font-100">Hi! I'm</div>
-              <div className="name font-10 text-9xl">
-                Zubi
-              </div>
+              <div className="name font-10 text-9xl">Zubi</div>
               <div className="profession text-3xl font-100">
                 Frontend Developer
               </div>
             </div>
             <div className="socialMediaIcons h-3/5 m-2  flex justify-center items-end gap-4 text-color-20">
               <div className="w-8 h-8 rounded-full bg-color-10 flex justify-center items-center">
-                <Icon className="text-2xl" icon="uil:linkedin-alt" />
+                <a
+                  href="https://github.com/zubia77"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <Icon
+                    className="text-2xl"
+                    icon="icon-park-outline:github-one"
+                  />
+                </a>
               </div>
               <div className="w-8 h-8 rounded-full bg-color-10 flex justify-center items-center">
-                <Icon
-                  className="text-2xl"
-                  icon="icon-park-outline:github-one"
-                />
+                <a
+                  href="https://www.linkedin.com/in/zubia-rashid-05ba3621b/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Icon className="text-2xl" icon="uil:linkedin-alt" />
+                </a>
               </div>
+
               <div className="w-8 h-8 rounded-full bg-color-10 flex justify-center items-center">
-                <Icon className="text-3xl" icon="ri:xing-fill" />
+                <a
+                  href="https://www.xing.com/profile/Zubia_Rashid"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Icon className="text-3xl" icon="ri:xing-fill" />
+                </a>
               </div>
             </div>
           </div>
