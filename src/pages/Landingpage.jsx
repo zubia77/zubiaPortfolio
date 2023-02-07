@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
 
 const Landingpage = () => {
@@ -76,18 +77,54 @@ const Landingpage = () => {
         </div>
 
         {/* Navbar */}
-        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-1 rounded-xl m-10 z-10">
-          1
-        </div>
-        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-2 rounded-xl m-10  z-10">
-          2
-        </div>
-        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-3 rounded-xl m-10  z-10">
-          3
-        </div>
-        <div className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-4 rounded-xl m-10 z-10">
-          4
-        </div>
+        <div></div>
+        <NavLink
+          to="/about"
+          className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-1 rounded-xl m-10 z-10 text-color-10 flex justify-evenly items-center"
+        >
+          <div className="w-36">
+            <img src="./public/meinAvatar.png" alt="" />
+          </div>
+          <div className="border-2 h-28 rounded-full"></div>
+          <div className="w-56 flex items-center text-6xl font-10">About</div>
+        </NavLink>
+        <NavLink
+          to="/skills"
+          className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-2 rounded-xl m-10  z-10 text-color-10 flex justify-evenly items-center"
+        >
+          <div className="w-36 grid grid-cols-3 grid-rows-2 gap-2">
+          <Icon icon="uiw:setting-o" className="text-8xl row-span-2"/>
+          <Icon icon="uiw:setting-o" className="text-5xl col-start-3"/>
+          <Icon icon="uiw:setting-o" className="text-4xl col-start-3"/>
+         
+          </div>
+          <div className="border-2 h-28 rounded-full"></div>
+          <div className="w-56 flex items-center text-6xl font-10">Skills</div>
+        </NavLink>
+        <NavLink
+          to="/projects"
+          className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-3 rounded-xl m-10  z-10 text-color-10 flex justify-evenly items-center"
+        >
+       <div className="w-36 grid grid-cols-3 grid-rows-2">
+       <Icon icon="tabler:bulb" className="text-8xl row-span-2"/>
+          <Icon icon="bi:brush" className="text-6xl col-start-3"/>
+          <Icon icon="ph:code-bold" className="text-7xl col-start-2"/>
+          </div>
+          <div className="border-2 h-28 rounded-full"></div>
+          <div className="w-56 flex items-center text-6xl font-10">Projects</div>
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className="navbar bg-color-20 h-40 col-start-8 col-end-11 row-start-4 rounded-xl m-10 z-10 text-color-10 flex justify-evenly items-center"
+        >
+          <div className="w-36 grid grid-cols-3 grid-rows-2">
+          <Icon icon="fluent-emoji-high-contrast:call-me-hand" className="text-6xl col-start-2"/>
+          <Icon icon="fluent-emoji-high-contrast:writing-hand" className="text-6xl col-start-1"/>
+          <Icon icon="fluent-emoji-high-contrast:hand-with-index-finger-and-thumb-crossed" className="text-6xl col-start-3"/>
+          </div>
+          <div className="border-2 h-28 rounded-full"></div>
+          <div className="w-56 flex items-center text-6xl font-10">Contact</div>
+        </NavLink>
       </div>
     </div>
   );

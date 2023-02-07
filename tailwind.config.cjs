@@ -21,6 +21,12 @@ module.exports = {
         90: "Pacifico",
         100: "Patrick Hand SC",
       },
+      backgroundImage: {
+        
+        'about': "url('/public/zubiRemovebg.png')",
+        
+
+    },
     },
   },
   plugins: [],
