@@ -8,7 +8,7 @@ import Skills from "./pages/Skills";
 
 function App() {
   return (
-    <div className="App w-screen h-100vh">
+    <div className="App w-screen h-100vh bg-color-10">
      
       <div>    <Routes>
                     <Route path="/" element={<Navigate to="/home" replace />} />

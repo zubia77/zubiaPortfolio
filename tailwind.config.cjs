@@ -22,9 +22,16 @@ module.exports = {
         100: "Patrick Hand SC",
       },
       backgroundImage: {
-        
+        'main': "url('/public/logoZ.png')",
         'about': "url('/public/zubiRemovebg.png')",
-        
+        'contact': "url('/public/imgportfolio2.png')",
+        'luftmasche': "url('/public/zubisLuftmasche.png')",
+        'deutschify': "url('/public/deutschifySite.png')",
+        'bmi': "url('/public/bmi.png')",
+        'derDieDas': "url('/public/derDieDas.png')",
+        'mathenerds': "url('/public/mathenerds.png')",
+        'sticky': "url('/public/sticky.png')",
+        'indianBride': "url('/public/theindianbride.png')",
 
     },
     },

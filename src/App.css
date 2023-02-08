@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+background-color: #e7e7de;
+}
 
 .bubble {
   background: radial-gradient(
@@ -14,7 +17,7 @@
 }
 .bub1 {
   animation: animate1 30s infinite linear;
- 
+
 }
 @keyframes animate1 {
   0% {
@@ -36,6 +39,7 @@
 
 .bub2 {
   animation: animate2 30s infinite linear;
+
 }
 @keyframes animate2 {
   0% {
@@ -56,6 +60,7 @@
 }
 .bub3 {
   animation: animate3 30s infinite;
+  
 }
 @keyframes animate3 {
   0% {
@@ -65,7 +70,7 @@
     transform: translate(37rem, -14rem);
   }
   50% {
-    transform: translate(45rem, 19rem);
+    transform: translate(45rem, 11rem);
   }
   75% {
     transform: translate(58rem, 8rem);
@@ -77,19 +82,20 @@
 
 .bub4 {
   animation: animate4 30s infinite;
+ 
 }
 @keyframes animate4 {
   0% {
     transform: translate(0rem);
   }
   25% {
-    transform: translate(3rem, -17rem);
+    transform: translate(13rem, -17rem);
   }
   50% {
-    transform: translate(7rem, 3rem);
+    transform: translate(27rem, 3rem);
   }
   75% {
-    transform: translate(45rem, 6rem);
+    transform: translate(45rem, 4rem);
   }
   100% {
     transform: translate(0rem);
@@ -98,16 +104,17 @@
 
 .bub5 {
   animation: animate5 30s infinite;
+
 }
 @keyframes animate5 {
   0% {
     transform: translate(0rem);
   }
   25% {
-    transform: translate(45rem, -13rem);
+    transform: translate(45rem, -9rem);
   }
   50% {
-    transform: translate(25rem, 15rem);
+    transform: translate(25rem, 13rem);
   }
   75% {
     transform: translate(36rem, -22rem);
@@ -119,6 +126,7 @@
 
 .bub6 {
   animation: animate6 30s infinite;
+ 
 }
 @keyframes animate6 {
   0% {
@@ -140,6 +148,7 @@
 
 .bub7 {
   animation: animate7 30s infinite;
+
 }
 @keyframes animate7 {
   0% {
@@ -161,6 +170,7 @@
 
 .bub8 {
   animation: animate8 30s infinite;
+
 }
 @keyframes animate8 {
   0% {
@@ -173,7 +183,7 @@
     transform: translate(-40rem, -8rem);
   }
   75% {
-    transform: translate(-18rem, 7rem);
+    transform: translate(-18rem, 3rem);
   }
   100% {
     transform: translate(0rem);
@@ -182,6 +192,7 @@
 
 .bub9 {
   animation: animate9 30s infinite;
+
 }
 @keyframes animate9 {
   0% {
@@ -191,10 +202,10 @@
     transform: translate(-25rem, -17rem);
   }
   50% {
-    transform: translate(27rem, -30rem);
+    transform: translate(21rem, -30rem);
   }
   75% {
-    transform: translate(-14rem, 5rem);
+    transform: translate(-14rem, 4rem);
   }
   100% {
     transform: translate(0rem);
@@ -212,7 +223,7 @@
     transform: translate(-4rem, -21rem);
   }
   50% {
-    transform: translate(23rem, 17rem);
+    transform: translate(21rem, 17rem);
   }
   75% {
     transform: translate(9rem, -30rem);
@@ -224,6 +235,7 @@
 
 .bub11 {
   animation: animate11 30s infinite;
+
 }
 @keyframes animate11 {
   0% {
@@ -245,6 +257,7 @@
 
 .bub12 {
   animation: animate12 30s infinite;
+  
 }
 @keyframes animate12 {
   0% {
@@ -257,7 +270,7 @@
     transform: translate(40rem, 10rem);
   }
   75% {
-    transform: translate(-60rem, 20rem);
+    transform: translate(-50rem, 20rem);
   }
   100% {
     transform: translate(0rem);
@@ -265,19 +278,20 @@
 }
 .bub13 {
   animation: animate13 30s infinite;
+
 }
 @keyframes animate13 {
   0% {
     transform: translate(0rem);
   }
   25% {
-    transform: translate(10rem, 20rem);
+    transform: translate(10rem, 13rem);
   }
   50% {
-    transform: translate(50rem, 10rem);
+    transform: translate(40rem, 10rem);
   }
   75% {
-    transform: translate(45rem, 2rem);
+    transform: translate(41rem, 2rem);
   }
   100% {
     transform: translate(0rem);
@@ -473,3 +487,208 @@
       border-right: 1px solid var(--caret);
       animation: blink 0.5s linear infinite;
     } */
+
+    .box1{
+      border: solid #e7e7de;
+      border-width: 1px 2px 3px 3px;
+      border-radius:15% 6% 82% 9%/7% 75% 3% 95%;
+      transform: rotate(3deg);
+    }
+    .box1 {
+      -webkit-backface-visibility: visible;
+      backface-visibility: visible;
+      -webkit-animation-name: flip;
+      animation-name: flip;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      }
+      @-webkit-keyframes flip {
+      0% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      }
+      40% {
+      -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+      transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      }
+      50% {
+      -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+      transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      }
+      80% {
+      -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
+      transform: perspective(400px) scale3d(.95, .95, .95);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      }
+      100% {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      }
+      }
+      @keyframes flip {
+      0% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      }
+      40% {
+      -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+      transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      }
+      50% {
+      -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+      transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      }
+      80% {
+      -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
+      transform: perspective(400px) scale3d(.95, .95, .95);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      }
+      100% {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      }
+      } 
+    .box2{
+      border: solid #e7e7de;
+      border-width: 2px 2px 4px 2px;
+      border-radius:95% 6% 92% 1%/4% 95% 6% 95%;
+      transform: rotate(2deg);
+    }
+    .box3{
+      border: solid #e7e7de;
+      border-width: 1px 2px 1px 3px;
+      border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+      transform: rotate(2deg);
+    }
+    .box4{
+      border: solid #e7e7de;
+      border-width: 3px 1px 2px 2px;
+      border-radius:95% 14% 92% 11%/7% 95% 3% 95%;
+      transform: rotate(2deg);
+    }
+    
+    .one {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 8s infinite;
+  }
+
+  .two {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 12s infinite;
+  }
+
+  .three {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 9s infinite;
+  }
+
+  .four {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 12s infinite;
+  }
+
+  .five {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 7s infinite;
+  }
+
+  .six {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 11s infinite;
+  }
+
+  .seven {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 15s infinite;
+  }
+
+  .eight {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 10s infinite;
+  }
+
+  .nine {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 16s infinite;
+  }
+
+  .ten {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 12s infinite;
+  }
+  .eleven {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 12s infinite;
+  }
+  .twelve {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      box-shadow: 10px 15px 50px rgba(253, 253, 253, 0.2);
+      animation: morphing 12s infinite;
+  }
+
+  @keyframes morphing {
+      0% {
+          border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+          box-shadow: 15px 15px 50px rgba(253, 250, 250, 0.2);
+      }
+      25% {
+          border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+      }
+      50% {
+          border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+          box-shadow: -10px -5px 50px rgba(246, 244, 244, 0.2);
+      }
+      75% {
+          border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+      }
+  }
+  .top {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+
+      text-decoration: none;
+  }
+  .top:visited {
+      text-decoration: none;
+  }
+  .top:hover {
+      text-decoration: none;
+  }
+
+  .shadowGlasmorphic {
+      box-shadow: 2px 3px 11px 10px rgba(240, 229, 229, 0.75);
+      -webkit-box-shadow: 2px 3px 11px 10px rgba(240, 229, 229, 0.75);
+      -moz-box-shadow: 2px 3px 11px 10px rgba(240, 229, 229, 0.75);
+  }
