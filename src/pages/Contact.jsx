@@ -27,13 +27,23 @@ const Contact = () => {
 
         {/* Meta Content */}
         <div className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-8 row-start-1 row-end-7 rounded-xl">
-          <div className="">
-
-          </div>
-          <div className="flex flex-col justify-end  items-end">
-            <img src="./public/meinAvatar.png" alt="" className="" />
-            <div className="border-8 border-color-10 rounded-full w-4/12"></div>
-            
+          <div className="w-full flex justify-between">
+            <div className="text-color-10 text-8xl font-10 m-40">
+              Get in Touch
+            </div>
+            <div className="flex flex-col">
+              <img src="./public/meinAvatar1.png" alt="" className="" />
+              <div className="border-8 border-color-10 rounded-full w-full"></div>
+            </div>{" "}
+          </div>{" "}
+          <div className="h-80  text-color-10 flex justify-around items-end ">
+            <div className="text-8xl border-2 rounded-full p-4">
+              <Icon icon="material-symbols:alternate-email-rounded" className="text-color-mail" />
+            </div>
+            <div className="text-8xl border-2 rounded-full p-4 "> <Icon icon="uit:linkedin-alt" className="text-color-linked" /></div>
+            <div className="text-8xl border-2 rounded-full p-4"> <Icon icon="tabler:brand-xing" className="text-color-xing" /></div>
+            <div className="text-8xl border-2 rounded-full p-4"> <Icon icon="logos:slack-icon" className="text-color-slack"/></div>
+            <div className="text-8xl border-2 rounded-full p-4"> <Icon icon="ic:round-discord" className="text-color-discord" /></div>
           </div>
         </div>
 
@@ -55,7 +65,7 @@ const Contact = () => {
           className="navbar bg-color-20 h-32 col-start-8 col-end-11 row-start-2 rounded-xl mt-8 mr-12  z-10 text-color-10 flex justify-evenly items-center"
         >
           <div className="w-32">
-            <img src="./public/meinAvatar.png" alt="" className="" />
+            <img src="./public/meinAvatar1.png" alt="" className="" />
           </div>
           <div className="border-2 h-24 rounded-full"></div>
           <div className="w-42 flex justify-center items-center text-6xl font-10">

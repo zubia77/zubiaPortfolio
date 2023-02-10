@@ -7,6 +7,11 @@ module.exports = {
         color: {
           10: "#E7E7DE",
           20: "#0F3057",
+          linked: "#277BC0",
+          xing: "#9EB23B",
+          mail: "#C85C8E",
+          slack: "#",
+          discord: "#A084DC",
         },
       },
       fontFamily: {

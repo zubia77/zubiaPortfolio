@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import LandingPage from "./pages/Landingpage";
 import Skills from "./pages/Skills";
+import "flip-card-wc"
 
 function App() {
   return (

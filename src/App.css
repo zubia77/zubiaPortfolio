@@ -488,104 +488,73 @@ background-color: #e7e7de;
       animation: blink 0.5s linear infinite;
     } */
 
-    .box1{
+    .box1 {
       border: solid #e7e7de;
       border-width: 1px 2px 3px 3px;
       border-radius:15% 6% 82% 9%/7% 75% 3% 95%;
-      transform: rotate(3deg);
+      height: 23.6rem;    
     }
-    .box1 {
-      -webkit-backface-visibility: visible;
-      backface-visibility: visible;
-      -webkit-animation-name: flip;
-      animation-name: flip;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      }
-      @-webkit-keyframes flip {
-      0% {
-      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-      transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-      -webkit-animation-timing-function: ease-out;
-      animation-timing-function: ease-out;
-      }
-      40% {
-      -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-      transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-      -webkit-animation-timing-function: ease-out;
-      animation-timing-function: ease-out;
-      }
-      50% {
-      -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-      transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-      -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
-      }
-      80% {
-      -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
-      transform: perspective(400px) scale3d(.95, .95, .95);
-      -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
-      }
-      100% {
-      -webkit-transform: perspective(400px);
-      transform: perspective(400px);
-      -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
-      }
-      }
-      @keyframes flip {
-      0% {
-      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-      transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
-      -webkit-animation-timing-function: ease-out;
-      animation-timing-function: ease-out;
-      }
-      40% {
-      -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-      transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-      -webkit-animation-timing-function: ease-out;
-      animation-timing-function: ease-out;
-      }
-      50% {
-      -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-      transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-      -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
-      }
-      80% {
-      -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
-      transform: perspective(400px) scale3d(.95, .95, .95);
-      -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
-      }
-      100% {
-      -webkit-transform: perspective(400px);
-      transform: perspective(400px);
-      -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
-      }
-      } 
+   
+    .boxA {
+      --flip-card-height: 23.rem !important;
+      --flip-card-transition-duration: 800ms;
+      --flip-card-border-radius: 15% 6% 82% 9%/7% 75% 3% 95% !important;
+      --flip-card-box-shadow:none !important;
+      --flip-card-background-color-front: #0F3057;
+      --flip-card-background-color-back: #0F3057;
+      --flip-card-transition-timing-function: ease;
+    }
+
+
+ 
     .box2{
       border: solid #e7e7de;
       border-width: 2px 2px 4px 2px;
-      border-radius:95% 6% 92% 1%/4% 95% 6% 95%;
-      transform: rotate(2deg);
+      border-radius:55% 16% 5% 11%/4% 5% 16% 5%;
+
     }
+    .boxB {
+      --flip-card-height: 24rem !important;
+      --flip-card-transition-duration: 800ms;
+      --flip-card-border-radius: 55% 16% 5% 11%/4% 5% 16% 5% !important;
+      --flip-card-box-shadow:none !important;
+      --flip-card-background-color-front: #0F3057;
+      --flip-card-background-color-back: #0F3057;
+      --flip-card-transition-timing-function: ease;
+    }
+    
     .box3{
       border: solid #e7e7de;
       border-width: 1px 2px 1px 3px;
       border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
-      transform: rotate(2deg);
+      
+    }
+
+    .boxC {
+      --flip-card-height: 24rem !important;
+      --flip-card-transition-duration: 800ms;
+      --flip-card-border-radius: 95% 4% 92% 5%/4% 95% 6% 95% !important;
+      --flip-card-box-shadow:none !important;
+      --flip-card-background-color-front: #0F3057;
+      --flip-card-background-color-back: #0F3057;
+      --flip-card-transition-timing-function: ease;
     }
     .box4{
       border: solid #e7e7de;
       border-width: 3px 1px 2px 2px;
-      border-radius:95% 14% 92% 11%/7% 95% 3% 95%;
-      transform: rotate(2deg);
+      border-radius:25% 4% 92% 1%/7% 95% 3% 95%;
+
     }
+    .boxD {
+      --flip-card-height: 24rem !important;
+      --flip-card-transition-duration: 800ms;
+      --flip-card-border-radius: 25% 4% 92% 1%/7% 95% 3% 95% !important;
+      --flip-card-box-shadow:none !important;
+      --flip-card-background-color-front: #0F3057;
+      --flip-card-background-color-back: #0F3057;
+      --flip-card-transition-timing-function: ease;
+    }
+
     
     .one {
       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;

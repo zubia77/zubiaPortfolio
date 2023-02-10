@@ -60,7 +60,7 @@ const About = () => {
           className="navbar bg-color-20 h-32 col-start-8 col-end-11 row-start-2 rounded-xl mt-8 mr-12  z-10 text-color-10 flex justify-evenly items-center"
         >
           <div className="w-32">
-            <img src="./public/meinAvatar.png" alt="" className="" />
+            <img src="./public/meinAvatar1.png" alt="" className="" />
           </div>
           <div className="border-2 h-24 rounded-full"></div>
           <div className="w-42 flex justify-center items-center text-6xl font-10">About</div>
