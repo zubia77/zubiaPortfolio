@@ -27,6 +27,7 @@ const Contact = () => {
 
         {/* Meta Content */}
         <div className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-8 row-start-1 row-end-7 rounded-xl">
+          <div className="w-20 h-20 bg-color-10 opacity-0"></div>
           <div className="w-full flex justify-between">
             <div className="text-color-10 text-8xl font-10 m-40">
               Get in Touch

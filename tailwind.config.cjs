@@ -14,6 +14,11 @@ module.exports = {
           discord: "#A084DC",
         },
       },
+
+      boxShadow: {
+        outer: "10px 10px 30px rgba(0, 0, 0, 0.5);",
+        inner: "inset 5px 5px 15px rgba(0, 0, 0, 0.5);",
+    },
       fontFamily: {
         10: "Patrick Hand SC",
         20: "Comic Neue",

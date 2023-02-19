@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import SoftskillsFront from "../components/SoftskillsFront";
-import SoftskillsBack from "../components/SoftskillsBack";
-import ReactCardFlip from "react-card-flip";
 import "flip-card-wc";
 
 const Skills = () => {
@@ -32,306 +29,398 @@ const Skills = () => {
         <div className="bubble bub17 rounded-full w-24 h-24 col-start-10 row-start-2"></div>
 
         {/* Meta Content */}
-        <div className="mainContent bg-color-20/90 z-10 col-start-1 col-end-8 row-start-1 row-end-7 m-8 rounded-xl">
-          <div className="w-full h-full text-color-10 flex flex-wrap justify-evenly p-10">
-    
-            <div className="boxA w-5/12 h-96">
-              {" "}
-              <flip-card variant="hover" className="box1">
-
-                <div className="box1 h-96" slot="front">
-                  <div className="w-20 h-20 border-4 rounded-full flex justify-center items-center m-4">
-                    <Icon icon="mdi:heart-cog-outline" className="2 text-5xl" />
-                  </div>
-                  <div className="h-56 font-30 text-4xl flex justify-center items-end">
-                    Softskills
-                  </div>
-                </div>{" "}
-
-
-                <div
-                  slot="back"
-                  className="box1 h-96 grid grid-cols-3 grid-rows-2"
-                >
-                  <div className="col-start-1 row-start-1 w-32 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
+        <div className="mainContent bg-color-20 z-10 col-start-1 col-end-8 row-start-1 row-end-7 m-8 rounded-xl flex flex-col items-center">
+         
+          <div className="softskills bg-color-10 m-4 shadow-inner w-11/12 font-10 text-3xl rounded-xl">
+            <div className="flex items-center text-color-20">
+              <Icon icon="mdi:heart-cog-outline" className="2 text-3xl" />
+              Softskills
+            </div>
+            <div className="softskills flex justify-between">
+              <div className="w-36 h-36 flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+      
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/zeitmanagement.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Time Management
                   </div>
-                  <div className="col-start-2 row-start-1 w-32 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-10">Time Management</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/teamfaehigkeit.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Teamplayer
                   </div>
-                  <div className="col-start-3 row-start-1 w-32 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-16">Teamplayer</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/planungskompetenz.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Planning Skills
                   </div>
-                  <div className="col-start-1 row-start-2  w-32 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-16">Planning Skills</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/loesungsorientiert.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Problem Solver
                   </div>
-                  <div className="col-start-2 row-start-2 w-32 m-4 flex flex-col items-center font-10 text-lg text-center">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-10">Problem Solver</div>
+              </div>
+              <div className="w-36 h-36 flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/improvisation.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Improvisational Skills
                   </div>
-                  <div className="col-start-3 row-start-2 w-32 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-16">Improvisational Skills</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/krisenmanagement.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Crisis Management
-                  </div>
-                </div>
-              </flip-card>
-            </div>
-
-            <div className="boxB w-5/12 h-96">
-              <flip-card variant="hover" className="">
-
-                <div className="box2 h-96" slot="front">
-                  <div className="w-20 h-20 border-4 rounded-full flex justify-center items-center m-4">
-                    <img
-                      src="./public/language.png"
-                      alt=""
-                      className="w-[55px]"
-                    />
-                  </div>
-                  <div className="h-56 font-30 text-4xl flex justify-center items-end">
-                    Languages
                   </div>
                 </div>{" "}
-
-                <div
-                  slot="back"
-                  className="box2 h-96 grid grid-cols-2 grid-rows-2 justify-items-center"
-                >
-                  <div className="col-start-1 row-start-1 w-32 m-4 flex flex-col items-center font-10 text-2xl">
-                    <img
+                <div className="text-lg font-10">Crisis Management</div>
+              </div>
+            </div>
+          </div>
+          <div className="language bg-color-10 m-4 shadow-inner rounded-xl w-11/12 font-10 text-3xl">
+            <div className="flex items-center text-color-20">
+              <img src="./public/language.png" alt="" className="w-10 h-10" />
+              Language
+            </div>
+            <div className="softskills flex justify-between">
+              <div className="w-36 h-36 flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/german.png"
                       alt=""
-                      className="w-28"
+                      className="w-16"
                     />
-                    German
                   </div>
-                  <div className="col-start-2 row-start-1 w-32 m-4 flex flex-col items-center font-10 text-2xl">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-10">German</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/english.png"
                       alt=""
-                      className="w-28"
+                      className="w-16"
                     />
-                    English
                   </div>
-
-                  <div className="col-start-1 row-start-2  w-32 m-4 flex flex-col items-center font-10 text-2xl">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-16">English</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/urdu.png"
                       alt=""
-                      className="w-28"
+                      className="w-16"
                     />
-                    Urdu
                   </div>
-                  <div className="col-start-2 row-start-2 w-32 m-4 flex flex-col items-center font-10 text-2xl text-center">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-16">Urdu</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/hindi.png"
                       alt=""
-                      className="w-28"
+                      className="w-16"
                     />
-                    Hindi
-                  </div>
-                </div>
-              </flip-card>
-            </div>
-            <div className="boxC w-5/12 h-96">
-              <flip-card variant="hover" className="">
-                <div className="box3 h-96" slot="front">
-                  <div className="w-20 h-20 border-4 rounded-full flex justify-center items-center m-4">
-                    <Icon
-                      icon="icon-park-outline:code-brackets"
-                      className="2 text-5xl"
-                    />
-                  </div>
-                  <div className="h-56 font-30 text-4xl flex justify-center items-end">
-                    Web Development
                   </div>
                 </div>{" "}
-                <div
-                  slot="back"
-                  className="box3 h-96 grid grid-cols-5 grid-rows-2 justify-items-center"
-                >
-                  <div className="col-start-1 row-start-1 w-20 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
+                <div className="text-lg font-10">Hindi</div>
+              </div>
+       
+           
+            </div>
+          </div>
+          <div className="webdev bg-color-10 m-4 shadow-inner rounded-xl w-11/12 font-10 text-3xl ">
+            <div className="flex items-center text-color-20">
+            <Icon
+                      icon="icon-park-outline:code-brackets"
+                      className="2 text-3xl"
+                    />
+              Web Development
+            </div>
+            <div className="webdev flex justify-between">
+              <div className="w-36 h-36 flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/html.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    HTML5
-                  </div>
-                  <div className="col-start-2 row-start-1 w-20 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
-                      src="./public/css.png"
-                      alt=""
-                      className="w-20"
-                    />
-                    CSS3
-                  </div>
-
-                  <div className="col-start-3 row-start-1  w-20 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
-                      src="./public/js.png"
-                      alt=""
-                      className="w-20"
-                    />
-                    Javascript
-                  </div>
-                  <div className="col-start-4 row-start-1 w-20 m-4 flex flex-col items-center font-10 text-lg text-center">
-                    <img
-                      src="./public/sass.png"
-                      alt=""
-                      className="w-20"
-                    />
-                    Sass
-                  </div>
-                  <div className="col-start-5 row-start-1 w-20 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
-                      src="./public/tailwind.png"
-                      alt=""
-                      className="w-20"
-                    />
-                    Tailwind
-                  </div>
-                  <div className="col-start-1 row-start-2 w-20 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
-                      src="./public/react.png"
-                      alt=""
-                      className="w-20"
-                    />
-                    React JS
-                  </div>
-                  <div className="col-start-2 row-start-2 w-20 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
-                      src="./public/mongo.png"
-                      alt=""
-                      className="w-20"
-                    />
-                    Mongo DB
-                  </div>
-                  <div className="col-start-3 row-start-2 w-20 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
-                      src="./public/node.png"
-                      alt=""
-                      className="w-20"
-                    />
-                    Node JS
-                  </div>
-                  <div className="col-start-4 row-start-2 w-20 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
-                      src="./public/express.png"
-                      alt=""
-                      className="w-20"
-                    />
-                    Express JS
-                  </div>
-                  <div className="col-start-5 row-start-2 w-20 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
-                      src="./public/mern.png"
-                      alt=""
-                      className="w-20"
-                    />
-                    Mernstack
-                  </div>
-                </div>
-              </flip-card>
-            </div>
-            <div className="boxD w-5/12 h-96">
-              <flip-card variant="hover" className="">
-                <div className="box4 h-96" slot="front">
-                  <div className="w-20 h-20 border-4 rounded-full flex justify-center items-center m-4">
-                    <Icon
-                      icon="fluent:design-ideas-24-regular"
-                      className="2 text-5xl"
-                    />
-                  </div>
-                  <div className="h-56 flex justify-center items-end font-30 text-3xl text-center">
-                    <p className="w-56 flex justify-center">
-                      UI/UX Design & Projectmanagement
-                    </p>
                   </div>
                 </div>{" "}
-                <div
-                  slot="back"
-                  className="box4 h-96 grid grid-cols-3 grid-rows-2 justify-items-center"
-                >
-                  <div className="col-start-1 row-start-1 w-32 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
+                <div className="text-lg font-10">HTML</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
+                      src="./public/css.png"
+                      alt=""
+                      className="w-16"
+                    />
+                  </div>
+                </div>{" "}
+                <div className="text-lg font-16">CSS</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
+                      src="./public/js.png"
+                      alt=""
+                      className="w-16"
+                    />
+                  </div>
+                </div>{" "}
+                <div className="text-lg font-16">Javascript</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
+                      src="./public/github.png"
+                      alt=""
+                      className="w-16"
+                    />
+                  </div>
+                </div>{" "}
+                <div className="text-lg font-16">Github</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
+                      src="./public/sass.png"
+                      alt=""
+                      className="w-16"
+                    />
+                  </div>
+                </div>{" "}
+                <div className="text-lg font-10">Sass</div>
+              </div>
+              <div className="w-36 h-36 flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
+                      src="./public/tailwind.png"
+                      alt=""
+                      className="w-16"
+                    />
+                  </div>
+                </div>{" "}
+                <div className="text-lg font-16">Tailwind</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
+                      src="./public/react.png"
+                      alt=""
+                      className="w-16"
+                    />
+                  </div>
+                </div>{" "}
+                <div className="text-lg font-10">React JS</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
+                      src="./public/mongo.png"
+                      alt=""
+                      className="w-16"
+                    />
+                  </div>
+                </div>{" "}
+                <div className="text-lg font-10">Mongo DB</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
+                      src="./public/node.png"
+                      alt=""
+                      className="w-16"
+                    />
+                  </div>
+                </div>{" "}
+                <div className="text-lg font-10">Node JS</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
+                      src="./public/express.png"
+                      alt=""
+                      className="w-16"
+                    />
+                  </div>
+                </div>{" "}
+                <div className="text-lg font-10">Express JS</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
+                      src="./public/mern.png"
+                      alt=""
+                      className="w-16"
+                    />
+                  </div>
+                </div>{" "}
+                <div className="text-lg font-10">Mernstack</div>
+              </div>
+            </div>
+          </div>
+          <div className="designPO bg-color-10 m-4 w-11/12 font-10 text-3xl rounded-xl shadow-inner">
+            <div className="flex items-center text-color-20">
+            <Icon
+                      icon="fluent:design-ideas-24-regular"
+                      className="2 text-3xl"
+                    />
+              UI-Design & Projectmanagement
+            </div>
+            <div className="softskills flex justify-between">
+              <div className="w-36 h-36 flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/figma.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Figma
                   </div>
-                  <div className="col-start-2 row-start-1 w-20 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-10">Figma</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/canva.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Canva
                   </div>
-
-                  <div className="col-start-3 row-start-1  w-32 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-16">Canva</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/gimp.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Gimp
                   </div>
-                  <div className="col-start-1 row-start-2 w-32 m-4 flex flex-col items-center font-10 text-lg text-center">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-16">Gimp</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/po.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Product Owner
                   </div>
-                  <div className="col-start-2 row-start-2 w-32 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-10">Product Owner</div>
+              </div>
+              <div className="w-36 h-36 flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/scrum.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Scrum
                   </div>
-                  <div className="col-start-3 row-start-2 w-32 m-4 flex flex-col items-center font-10 text-lg">
-                    <img
+                </div>{" "}
+                <div className="text-lg font-16">Scrum</div>
+              </div>
+              <div className="w-36 h-36  flex flex-col justify-center items-center">
+                {" "}
+                <div className="w-28 h-28 rounded-full bg-color-20 flex justify-center items-center shadow-outer">
+                  <div className="iconBtn w-20 h-20  flex justify-center items-center">
+                  <img
                       src="./public/jira.png"
                       alt=""
-                      className="w-20"
+                      className="w-16"
                     />
-                    Jira
                   </div>
-                </div>
-              </flip-card>
+                </div>{" "}
+                <div className="text-lg font-10">Jira</div>
+              </div>
             </div>
           </div>
         </div>
