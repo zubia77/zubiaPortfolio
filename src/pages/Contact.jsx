@@ -1,8 +1,27 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
+import useMightyMouse from "react-hook-mighty-mouse";
+import EyesFollow from "./EyesFollow";
 
 const Contact = () => {
+  // const {
+  //   position: { angle: angleLeftEye },
+  // } = useMightyMouse(true, "left-eye", { x: 45, y: 45 });
+  // const {
+  //   position: { angle: angleRightEye },
+  // } = useMightyMouse(true, "right-eye", { x: 45, y: 45 });
+
+  // const styleLeftEye = {
+  //   transform: `rotate(${angleLeftEye}deg)`,
+  //   transition: `all 200ms ease`,
+  // };
+
+  // const styleRightEye = {
+  //   transform: `rotate(${angleRightEye}deg)`,
+  //   transition: `all 200ms ease`,
+  // };
+
   return (
     <div className="landingpage h-screen w-screen bg-color-10">
       <div className="h-screen grid grid-cols-10 grid-rows-5">
@@ -27,24 +46,49 @@ const Contact = () => {
 
         {/* Meta Content */}
         <div className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-8 row-start-1 row-end-7 rounded-xl">
-          <div className="w-20 h-20 bg-color-10 opacity-0"></div>
-          <div className="w-full flex justify-between">
+          <div className="w-full flex justify-between ">
             <div className="text-color-10 text-8xl font-10 m-40">
               Get in Touch
             </div>
-            <div className="flex flex-col">
+            <EyesFollow />
+            <div className="flex flex-col -4">
               <img src="./public/meinAvatar1.png" alt="" className="" />
               <div className="border-8 border-color-10 rounded-full w-full"></div>
             </div>{" "}
           </div>{" "}
           <div className="h-80  text-color-10 flex justify-around items-end ">
             <div className="text-8xl border-2 rounded-full p-4">
-              <Icon icon="material-symbols:alternate-email-rounded" className="text-color-mail" />
+              <Icon
+                icon="material-symbols:alternate-email-rounded"
+                className="text-color-mail"
+              />
             </div>
-            <div className="text-8xl border-2 rounded-full p-4 "> <Icon icon="uit:linkedin-alt" className="text-color-linked" /></div>
-            <div className="text-8xl border-2 rounded-full p-4"> <Icon icon="tabler:brand-xing" className="text-color-xing" /></div>
-            <div className="text-8xl border-2 rounded-full p-4"> <Icon icon="logos:slack-icon" className="text-color-slack"/></div>
-            <div className="text-8xl border-2 rounded-full p-4"> <Icon icon="ic:round-discord" className="text-color-discord" /></div>
+            <div className="text-8xl border-2 rounded-full p-4 ">
+              <a
+                href="https://www.linkedin.com/in/zubia-rashid-05ba3621b/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon icon="uit:linkedin-alt" className="text-color-linked" />
+              </a>{" "}
+            </div>
+            <div className="text-8xl border-2 rounded-full p-4">
+              <a
+                href="https://www.xing.com/profile/Zubia_Rashid"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon icon="tabler:brand-xing" className="text-color-xing" />
+              </a>{" "}
+            </div>
+            <div className="text-8xl border-2 rounded-full p-4">
+              {" "}
+              <Icon icon="logos:slack-icon" className="text-color-slack" />
+            </div>
+            <div className="text-8xl border-2 rounded-full p-4">
+              {" "}
+              <Icon icon="ic:round-discord" className="text-color-discord" />
+            </div>
           </div>
         </div>
 

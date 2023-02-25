@@ -594,3 +594,97 @@ body {
   box-shadow: inset 6.31px 6.31px 11px #61615f,
     inset -6.31px -6.31px 11px #fcfcf2;
 }
+
+
+
+
+/* contact avatar */
+.eye {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  
+  /* &:first-child {
+    margin-right: 116px;
+  } */
+
+
+}
+.eye:first-child {
+  margin-right: 116px;
+}
+  .pupil {
+ 
+    border-radius: 50%;
+    object-fit: contain;
+    width: 60px;
+    height: 90px;
+
+    transform: scale(1.5);
+  }
+.row {
+  bottom:143px;
+  left: 25px;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  display: flex;
+  transform: scale(0.45);
+  opacity: 1;
+}
+
+.head {
+  z-index: 3;
+  position: absolute;
+  bottom:0;
+  left: calc(50vw - 115px);
+  width: 300px;
+  margin: 0 auto;
+}
+
+.mask {
+  z-index: 1;
+  position: absolute;
+  bottom: 160px;
+  left: calc(50vw - 40px);
+  width: 150px;
+  margin: 0 auto;
+}
+
+
+/* eyesfolloow */
+
+.eyes-follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+  .eyes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .eye {
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      background: #f3efef;
+    }
+
+      .pupil {
+        background: #382e25;
+        border-radius: 50%;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        left: 25px;
+        top: 12px;
+      }
