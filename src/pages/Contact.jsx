@@ -1,11 +1,12 @@
-import React from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import useMightyMouse from "react-hook-mighty-mouse";
-import EyesFollow from "./EyesFollow";
+import EyesFollow from "../components/EyesFollow";
+import Email from "../components/Email";
 
 const Contact = () => {
-  
+  const [isClicked, setIsClicked] = useState(false);
 
   return (
     <div className="landingpage h-screen w-screen bg-color-10">
@@ -30,7 +31,7 @@ const Contact = () => {
         <div className="bubble bub17 rounded-full w-24 h-24 col-start-10 row-start-2"></div>
 
         {/* Meta Content */}
-        <div  className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-8 row-start-1 row-end-7 rounded-xl">
+        <div className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-8 row-start-1 row-end-7 rounded-xl">
           <div className="w-full flex justify-between ">
             <div className="text-color-10 text-8xl font-10 m-40">
               Get in Touch
@@ -41,12 +42,19 @@ const Contact = () => {
               <div className="border-8 border-color-10 rounded-full w-full"></div>
             </div>{" "} */}
           </div>{" "}
-          <div className="h-80  text-color-10 flex justify-around items-end ">
-            <div className="text-8xl border-2 rounded-full p-4">
+          <div className="h-80  text-color-10 flex justify-around items-end z-10">
+          <Email className="" trigger={isClicked}>
+              {" "}
+            </Email>
+            <div
+              className="text-8xl border-2 rounded-full p-4"
+              onClick={() => setIsClicked(true)}
+            >
+              {" "}
               <Icon
                 icon="material-symbols:alternate-email-rounded"
                 className="text-color-mail"
-              />
+              />{" "}
             </div>
             <div className="text-8xl border-2 rounded-full p-4 ">
               <a
