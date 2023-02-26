@@ -587,7 +587,6 @@ body {
   -moz-box-shadow: 2px 3px 11px 10px rgba(240, 229, 229, 0.75);
 }
 
-
 .iconBtn {
   background: linear-gradient(145deg, #ffffff, #aeaea7);
   border-radius: 100%;
@@ -595,96 +594,98 @@ body {
     inset -6.31px -6.31px 11px #fcfcf2;
 }
 
-
-
-
-/* contact avatar */
-.eye {
-  border-radius: 50%;
-  height: 90px;
-  width: 90px;
-  
-  /* &:first-child {
-    margin-right: 116px;
-  } */
-
-
-}
-.eye:first-child {
-  margin-right: 116px;
-}
-  .pupil {
- 
-    border-radius: 50%;
-    object-fit: contain;
-    width: 60px;
-    height: 90px;
-
-    transform: scale(1.5);
-  }
-.row {
-  bottom:143px;
-  left: 25px;
-  width: 100%;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  display: flex;
-  transform: scale(0.45);
-  opacity: 1;
-}
-
-.head {
-  z-index: 3;
-  position: absolute;
-  bottom:0;
-  left: calc(50vw - 115px);
-  width: 300px;
-  margin: 0 auto;
-}
-
-.mask {
-  z-index: 1;
-  position: absolute;
-  bottom: 160px;
-  left: calc(50vw - 40px);
-  width: 150px;
-  margin: 0 auto;
-}
-
-
 /* eyesfolloow */
-
-.eyes-follow {
+/* .eyes-follow {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 50vw;
   height: 50vh;
 }
+.eyes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .eyes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+} */
 
-    .eye {
-      border-radius: 50%;
-      height: 40px;
-      width: 40px;
-      background: #f3efef;
-    }
+.eye {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: #ffffff;
 
-      .pupil {
-        background: #382e25;
-        border-radius: 50%;
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        left: 25px;
-        top: 12px;
-      }
+}
+
+
+.pupilL {
+  border-radius: 50%;
+ 
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+
+}
+.pupilR {
+  border-radius: 50%;
+ 
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+
+}
+
+
+.pupilRight {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+/* .head {
+  z-index: 3;
+  width: 450px;
+  border: yellow solid 2px;
+} */
+
+
+/* skills 3d effect */
+
+.circle{
+  height: 400px;
+  width: 400px;
+  background: linear-gradient(#f00202 0%, #bd0404 10%, #7d0404 50%, #4a0202 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle::before{
+  content: "";
+  height: 360px;
+  width: 360px;
+  background: linear-gradient(#f06060 0%, #a30505 60%, #4d0202 100%);
+  border-radius: 50%;
+  filter: blur(18px);
+}
+
+.circle::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6  );
+  bottom: -60px;
+  z-index: -1;
+  filter: blur(10px);
+}

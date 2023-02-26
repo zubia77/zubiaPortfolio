@@ -5,22 +5,7 @@ import useMightyMouse from "react-hook-mighty-mouse";
 import EyesFollow from "./EyesFollow";
 
 const Contact = () => {
-  // const {
-  //   position: { angle: angleLeftEye },
-  // } = useMightyMouse(true, "left-eye", { x: 45, y: 45 });
-  // const {
-  //   position: { angle: angleRightEye },
-  // } = useMightyMouse(true, "right-eye", { x: 45, y: 45 });
-
-  // const styleLeftEye = {
-  //   transform: `rotate(${angleLeftEye}deg)`,
-  //   transition: `all 200ms ease`,
-  // };
-
-  // const styleRightEye = {
-  //   transform: `rotate(${angleRightEye}deg)`,
-  //   transition: `all 200ms ease`,
-  // };
+  
 
   return (
     <div className="landingpage h-screen w-screen bg-color-10">
@@ -45,16 +30,16 @@ const Contact = () => {
         <div className="bubble bub17 rounded-full w-24 h-24 col-start-10 row-start-2"></div>
 
         {/* Meta Content */}
-        <div className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-8 row-start-1 row-end-7 rounded-xl">
+        <div  className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-8 row-start-1 row-end-7 rounded-xl">
           <div className="w-full flex justify-between ">
             <div className="text-color-10 text-8xl font-10 m-40">
               Get in Touch
             </div>
             <EyesFollow />
-            <div className="flex flex-col -4">
+            {/* <div className="flex flex-col -4" >
               <img src="./public/meinAvatar1.png" alt="" className="" />
               <div className="border-8 border-color-10 rounded-full w-full"></div>
-            </div>{" "}
+            </div>{" "} */}
           </div>{" "}
           <div className="h-80  text-color-10 flex justify-around items-end ">
             <div className="text-8xl border-2 rounded-full p-4">
@@ -81,13 +66,14 @@ const Contact = () => {
                 <Icon icon="tabler:brand-xing" className="text-color-xing" />
               </a>{" "}
             </div>
-            <div className="text-8xl border-2 rounded-full p-4">
+            <div className="text-8xl border-2 border-gray-500 rounded-full p-4">
               {" "}
-              <Icon icon="logos:slack-icon" className="text-color-slack" />
+              {/* <Icon icon="logos:slack-icon" className="text-color-slack" /> */}
+              <Icon icon="ph:slack-logo-duotone" className="text-gray-500" />
             </div>
-            <div className="text-8xl border-2 rounded-full p-4">
+            <div className="text-8xl border-2 border-gray-500 rounded-full p-4">
               {" "}
-              <Icon icon="ic:round-discord" className="text-color-discord" />
+              <Icon icon="ic:round-discord" className="text-gray-500" />
             </div>
           </div>
         </div>

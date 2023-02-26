@@ -1,48 +1,51 @@
-import React from 'react'
-import useMightyMouse from 'react-hook-mighty-mouse';
-import '../App.css';
+import React from "react";
+import useMightyMouse from "react-hook-mighty-mouse";
+import "../App.css";
 
-function EyesFollow() {
+const EyesFollow = () => {
+  const {
+    selectedElement: {
+      position: { angle: angleLeftEye },
+    },
+  } = useMightyMouse(true, "left-eye", { x: 45, y: 45 });
+  const {
+    selectedElement: {
+      position: { angle: angleRightEye },
+    },
+  } = useMightyMouse(true, "right-eye", { x: 45, y: 45 });
 
-    const {
-		selectedElement: {
-			position: { angle: angleLeftEye },
-		},
-	} = useMightyMouse(true, 'left-eye', { x: 20, y: 20 });
-	const {
-		selectedElement: {
-			position: { angle: angleRightEye },
-		},
-	} = useMightyMouse(true, 'right-eye', { x: 20, y: 20 });
+  let rotateLeftEye = "";
+  let rotateRightEye = "";
 
-	let rotateLeftEye = '';
-	let rotateRightEye = '';
+  if (angleLeftEye !== null && angleRightEye !== null) {
+    rotateLeftEye = `rotate(${-angleLeftEye}deg)`;
+    rotateRightEye = `rotate(${-angleRightEye}deg)`;
+  }
 
-	if (angleLeftEye !== null && angleRightEye !== null) {
-		rotateLeftEye = `rotate(${-angleLeftEye}deg)`;
-		rotateRightEye = `rotate(${-angleRightEye}deg)`;
-	}
   return (
-    <div className="eyes-follow">
-    <div className="eyes">
+    <div className="head z-30 ">
+      {" "}
+      <div className="eyes w-[150px] -z-20  absolute top-[185px]  bg-white left-[1035px]  flex justify-between">
+        {" "}
         <div
-            id="left-eye"
-            className="eye"
-            style={{ transform: rotateLeftEye }}
+          id="left-eye"
+          className="eye"
+          style={{ transform: rotateLeftEye }}
         >
-            <div className="pupil" />
+          <img src="../public/pupil.png" className="pupilL scale-125" alt="" />
         </div>
         <div
-            id="right-eye"
-            className="eye"
-            style={{ transform: rotateRightEye }}
+          id="right-eye"
+          className="eye"
+          style={{ transform: rotateRightEye }}
         >
-            <div className="pupil" />
+          <img src="../public/pupil.png" className="pupilR  scale-125" alt="" />
         </div>
+      </div>
+      <img src="../public/meinAvatar3.png" alt="" className="z-10 " />{" "}
+      <div className="absolute top-[180px] -z-30  bg-white left-[1025px] w-[175px] h-20"></div>
     </div>
-</div>
-  )
-}
+  );
+};
 
-export default EyesFollow
-
+export default EyesFollow;
