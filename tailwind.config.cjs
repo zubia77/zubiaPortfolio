@@ -29,7 +29,6 @@ module.exports = {
         70: "Homemade Apple",
         80: "Indie Flower",
         90: "Pacifico",
-        100: "Patrick Hand SC",
       },
       backgroundImage: {
         'main': "url('/public/logoZ.png')",

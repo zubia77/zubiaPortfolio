@@ -5,8 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "tsc --build --clean && vite build",
+    "preview": "vite preview",
+    "setup": "npm i && pm2 start --name zubiaportfolio npm -- start --update-env --time && pm2 save",
+    "deploy": "git pull --no-rebase && pm2 restart zubiaPortfolio --update-env --time && pm2 save",
+    "cp": "node cli/cp.mjs"
+
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",

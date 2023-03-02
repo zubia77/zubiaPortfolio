@@ -43,7 +43,7 @@ const Contact = () => {
             </div>{" "} */}
           </div>{" "}
           <div className="h-80  text-color-10 flex justify-around items-end z-10">
-          <Email className="" trigger={isClicked}>
+          <Email className="" trigger={isClicked} setTrigger={setIsClicked}>
               {" "}
             </Email>
             <div
