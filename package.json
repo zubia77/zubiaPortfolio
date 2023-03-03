@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --build --clean && vite build",
+    "start": "vite serve --host --port 3555",
     "preview": "vite preview",
     "setup": "npm i && pm2 start --name zubiaportfolio npm -- start --update-env --time && pm2 save",
     "deploy": "git pull --no-rebase && pm2 restart zubiaPortfolio --update-env --time && pm2 save",
