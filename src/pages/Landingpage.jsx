@@ -53,18 +53,18 @@ const Landingpage = () => {
               <div className="text-color-10 h-48 pt-32 flex justify-center text-center">
                 <div className="mx-10">
                   <h2 className="text-2xl">10k+</h2>
-                  <p className="text-sm font-20">lines of Code</p>
+                  <p className="text-sm font-10">lines of Code</p>
                 </div>
                 <div className="mx-10">
                   <h2 className="text-2xl">200+</h2>
-                  <p className="text-sm font-20">nightshifts</p>
+                  <p className="text-sm font-10">nightshifts</p>
                 </div> <div className="mx-10">
                   <h2 className="text-2xl">1 Mio+</h2>
-                  <p className="text-sm font-20 w-20">minutes coding experience</p>
+                  <p className="text-sm font-10 w-20">minutes coding experience</p>
                 </div>
                 <div className="mx-10">
                   <h2 className="text-2xl">10+</h2>
-                  <p className="text-sm font-20">project ideas</p>
+                  <p className="text-sm font-10">project ideas</p>
                 </div>
                
               </div>
