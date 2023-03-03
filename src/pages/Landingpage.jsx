@@ -34,7 +34,7 @@ const Landingpage = () => {
               <img className="w-80 h-80" src="./public/Z.png" alt="" />
             </div>
             <div className="h-3/6 flex flex-col justify-between items-center text-color-10">
-              <div className="greeting text-4xl font-100">Hi! I'm</div>
+              <div className="greeting text-4xl font-10">Hi! I'm</div>
               <div className="name font-10 text-9xl">Zubi</div>
               <div className=" text-3xl font-100">
               <Typewriter className="profession text-9xl font-10"
