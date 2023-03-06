@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import LandingPage from "./pages/Landingpage";
 import Skills from "./pages/Skills";
+import Construction from "./components/Construction";
 import "flip-card-wc"
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
                     <Route path="about" element={<About />}></Route>
                     <Route path="skills" element={<Skills />}></Route>
                     <Route path="projects" element={<Projects />}></Route>
-                    <Route path="contact" element={<Contact />}></Route>
+                    <Route path="contact" element={<Construction />}></Route>
                 </Routes></div>
     </div>
   );

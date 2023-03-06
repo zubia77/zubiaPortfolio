@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import useMightyMouse from "react-hook-mighty-mouse";
 import EyesFollow from "../components/EyesFollow";
 import Email from "../components/Email";
 
