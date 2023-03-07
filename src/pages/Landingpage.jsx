@@ -12,7 +12,7 @@ const Landingpage = () => {
        <Bubbles/>
 
         {/* Meta Content */}
-        <div className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-8 row-start-1 row-end-7 rounded-xl">
+        <div className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-8 row-start-1 row-end-6 rounded-xl">
           <div className="h-full flex flex-col items-center">
             {" "}
             <div className="flex justify-center">

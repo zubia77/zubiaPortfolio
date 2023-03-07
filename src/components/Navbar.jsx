@@ -4,10 +4,10 @@ import { Icon } from "@iconify/react";
 
 function Navbar() {
   return (
-    <div className='grid grid-rows-5 mt-8 gap-16'>
+    <div className='grid grid-rows-5 mt-8 gap-20'>
       <NavLink
           to="/home"
-          className="navbar bg-color-20 w-96 h-32 row-start-1 rounded-xl ml-12 z-10 text-color-10 flex justify-evenly items-center"
+          className="navbar bg-color-20 w-96 h-28 row-start-1 row-end-2 rounded-xl ml-12 z-10 text-color-10 flex justify-evenly items-center"
         >
           <div className="w-32">
             <img src="./public/Z.png" alt="" />
@@ -19,9 +19,9 @@ function Navbar() {
         </NavLink>
         <NavLink
           to="/about"
-          className="navbar bg-color-20 w-96 h-32 row-start-2 rounded-xl ml-12  z-10 text-color-10 flex justify-evenly items-center"
+          className="navbar bg-color-20 w-96 h-28 row-start-2 row-end-3 rounded-xl ml-12  z-10 text-color-10 flex justify-evenly items-center"
         >
-          <div className="w-32">
+          <div className="w-28">
             <img src="./public/meinAvatar1.png" alt="" className="" />
           </div>
           <div className="border-2 h-24 rounded-full"></div>
@@ -31,7 +31,7 @@ function Navbar() {
         </NavLink>
         <NavLink
           to="/skills"
-          className="navbar bg-color-20 w-96 h-32 row-start-3 rounded-xl ml-12  z-10 text-color-10 flex justify-evenly items-center"
+          className="navbar bg-color-20 w-96 h-28 row-start-3 row-end-4 rounded-xl ml-12  z-10 text-color-10 flex justify-evenly items-center"
         >
           <div className="w-24 grid grid-cols-3 grid-rows-2 gap-2">
             <Icon icon="uiw:setting-o" className="text-7xl row-span-2" />
@@ -45,7 +45,7 @@ function Navbar() {
         </NavLink>
         <NavLink
           to="/projects"
-          className="navbar bg-color-20 w-96 h-32 row-start-4 rounded-xl ml-12  z-10 text-color-10 flex justify-evenly items-center"
+          className="navbar bg-color-20 w-96 h-28 row-start-4 row-end-5 rounded-xl ml-12  z-10 text-color-10 flex justify-evenly items-center"
         >
           <div className="w-36 flex justify-center">
             {/* <Icon icon="tabler:bulb" className="text-8xl row-span-2"/>
@@ -59,7 +59,7 @@ function Navbar() {
         </NavLink>
         <NavLink
           to="/contact"
-          className="navbar bg-color-20 w-96 h-32 row-start-5 rounded-xl ml-12 z-10 text-color-10 flex justify-evenly items-center"
+          className="navbar bg-color-20 w-96 h-28 row-start-5 row-end-6 rounded-xl ml-12 z-10 text-color-10 flex justify-evenly items-center"
         >
           <div className="w-36 flex justify-center">
             <Icon

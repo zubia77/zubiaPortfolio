@@ -83,7 +83,7 @@ const Skills = () => {
         <Bubbles/>
 
         {/* Meta Content */}
-        <div className="mainContent bg-color-20 z-10 col-start-1 col-end-8 row-start-1 row-end-7 m-8 rounded-xl flex flex-col items-center">
+        <div className="mainContent bg-color-20 z-10 col-start-1 col-end-8 row-start-1 row-end-6 m-8 rounded-xl flex flex-col items-center">
           <div className="softskills bg-color-10 m-4 shadow-inner w-11/12 font-10 text-3xl rounded-xl">
             <div className="flex items-center text-color-20">
               <Icon icon="mdi:heart-cog-outline" className="2 text-3xl" />
