@@ -10,17 +10,17 @@ const Construction = () => {
         {/* Bubbles */}
        <Bubbles/>
         {/* Meta Content */}
-        <div className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-8 row-start-1 row-end-7 rounded-xl">
+        <div className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-11 row-start-2 row-end-4 rounded-xl">
           <div className="h-full flex flex-col items-center">
-            <img src="../../public/underConstruction.png" alt="" className="w-[800px]" />
-            <div className="text-color-10 text-8xl font-10">Coming Soon</div>
+            <img src="../../public/underConstruction.png" alt="" className="lg:w-[800px]" />
+            <div className="text-color-10 text-5xl font-10 text-center">Coming Soon</div>
           </div>
         </div>
 
         {/* Navbar */}
-        <div className="col-start-8 col-end-11">
+        {/* <div className="col-start-8 col-end-11">
           <Navbar />
-        </div>
+        </div> */}
       </div>
     </div>
   );

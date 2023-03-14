@@ -14,10 +14,10 @@ function App() {
      
       <div>    <Routes>
                     <Route path="/" element={<Navigate to="/home" replace />} />
-                    <Route path="/home" element={<LandingPage />} />
-                    <Route path="about" element={<About />}></Route>
-                    <Route path="skills" element={<Skills />}></Route>
-                    <Route path="projects" element={<Projects />}></Route>
+                    <Route path="/home" element={<Construction />} />
+                    <Route path="about" element={<Construction />}></Route>
+                    <Route path="skills" element={<Construction />}></Route>
+                    <Route path="projects" element={<Construction />}></Route>
                     <Route path="contact" element={<Construction />}></Route>
                 </Routes></div>
     </div>

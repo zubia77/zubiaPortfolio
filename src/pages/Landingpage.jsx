@@ -9,7 +9,7 @@ const Landingpage = () => {
     <div className="">
       {" "}
       <div className="md:hidden">
-        <img src="../public/underConstructionMobile.png" alt="" className="h-screen w-screen" />
+        <img src="../public/underConstructionMobile.png" alt="" className="h-screen w-" />
       </div>
       <div className="hidden md:block landingpage h-screen w-screen bg-color-10 ">
         <div className=" h-screen grid :grid-cols-9 grid-rows-5">
