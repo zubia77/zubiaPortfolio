@@ -8,7 +8,7 @@ const Construction = () => {
     <div className="landingpage  bg-color-10">
       <div className="h-screen grid grid-cols-9 grid-rows-5">
         {/* Bubbles */}
-       <Bubbles/>
+       {/* <Bubbles/> */}
         {/* Meta Content */}
         <div className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-11 row-start-2 row-end-5 rounded-xl">
           <div className="h-full flex flex-col items-center">
