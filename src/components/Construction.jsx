@@ -5,7 +5,7 @@ import Bubbles from "../components/Bubbles";
 
 const Construction = () => {
   return (
-    <div className="landingpage h-screen w-screen bg-color-10 ">
+    <div className="landingpage  bg-color-10">
       <div className="h-screen grid grid-cols-9 grid-rows-5">
         {/* Bubbles */}
        <Bubbles/>
