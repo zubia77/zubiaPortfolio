@@ -12,6 +12,10 @@ const Construction = () => {
         {/* Meta Content */}
         <div className="mainContent bg-color-20/90 m-8 z-10 col-start-1 col-end-11 row-start-1 row-end-6 rounded-xl">
           <div className="h-full flex flex-col items-center justify-center">
+          <div className="text-color-10 text-5xl font-10 text-center">
+            <h1>Hi, I'm Zubia</h1>
+            <p>Iam currently working on my portfolio</p>
+              </div>
             <img src="../../public/underConstruction.png" alt="" className="lg:w-[800px]" />
             <div className="text-color-10 text-5xl font-10 text-center">Coming Soon</div>
           </div>
